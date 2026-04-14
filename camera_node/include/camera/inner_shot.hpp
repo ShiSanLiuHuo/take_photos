@@ -3,7 +3,7 @@
 #include "rclcpp/rclcpp.hpp"
 #include "sensor_msgs/msg/image.hpp"
 #include <chrono>
-#include <cv_bridge/cv_bridge.hpp>
+#include <cv_bridge/cv_bridge.h>
 #include <memory>
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgproc.hpp>
