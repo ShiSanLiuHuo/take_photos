@@ -23,7 +23,7 @@ CameraNode::CameraNode(const rclcpp::NodeOptions &options)
       "save_dir", (std::filesystem::current_path() / "imgs").string());
   std::filesystem::create_directories(save_dir_);
 
-  exposure_time = this->declare_parameter("exposure_time", 30000);
+  exposure_time = this->declare_parameter("exposure_time", 3000);
   gain = this->declare_parameter("gain", 128);
   rosbag_flag = this->get_parameter("rosbag_flag").as_bool();
 
